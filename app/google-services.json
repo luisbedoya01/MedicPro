@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "711142932747",
+    "project_id": "medicpro-app",
+    "storage_bucket": "medicpro-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711142932747:android:d8604d3f21344830a9a20e",
+        "android_client_info": {
+          "package_name": "com.example.proyecto_medicpro_grupo2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ69Y-UWTfxwUkaN2U-db_rKkqM7U1Pmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
