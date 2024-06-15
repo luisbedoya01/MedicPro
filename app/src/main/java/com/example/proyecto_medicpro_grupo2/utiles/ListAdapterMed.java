@@ -22,12 +22,6 @@ public class ListAdapterMed extends RecyclerView.Adapter<ListAdapterMed.ViewHold
 
     private Context context;
 
-    private int idUsuario;
-
-    private MyOpenHelper dbMedicPro;
-
-    private SharedPreferences preferences;
-
     public ListAdapterMed(List<Medicamento> listMedicamentos, Context context) {
         this.listMedicamentos = listMedicamentos;
         this.layoutInflater = LayoutInflater.from(context);
