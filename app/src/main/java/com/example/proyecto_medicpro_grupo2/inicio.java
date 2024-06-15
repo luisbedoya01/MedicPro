@@ -39,8 +39,7 @@ public class inicio extends AppCompatActivity {
         Utils.toastOK(this, "Sesión cerrada correctamente");
         finish();
     }
-
-    public void ventanaRecordatorios(View v){
+    public void listadoRecordatorios (View view) {
         Intent recordatorios = new Intent(this, ListaRecordatoriosActivity.class);
         startActivity(recordatorios);
     }

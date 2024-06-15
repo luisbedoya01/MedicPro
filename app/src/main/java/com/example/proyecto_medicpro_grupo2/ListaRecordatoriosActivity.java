@@ -48,7 +48,7 @@ public class ListaRecordatoriosActivity extends AppCompatActivity {
         listaRecordatorio = new ArrayList<>();
         listaRecordatorio = dbMedicPro.obtenerRecordatorios(idUsuario);
 
-        if (listaRecordatorio.size() > 0) {
+        if (!listaRecordatorio.isEmpty()) {
             ListAdapter listAdapter = new ListAdapter(listaRecordatorio, this);
             RecyclerView recyclerView = findViewById(R.id.viewRecordatorios);
             recyclerView.setHasFixedSize(true);

@@ -46,7 +46,7 @@ public class InformeActivity extends AppCompatActivity {
         listaMedicamentos = new ArrayList<>();
         listaMedicamentos = dbMedicPro.obtenerMedicamentosConCumplimiento(idUsuario);
 
-        if (listaMedicamentos.size() > 0) {
+        if (!listaMedicamentos.isEmpty()) {
             ListAdapterMed listAdapterMed = new ListAdapterMed(listaMedicamentos, this);
             RecyclerView recyclerView = findViewById(R.id.viewMedicamentos);
             recyclerView.setHasFixedSize(true);
@@ -58,7 +58,7 @@ public class InformeActivity extends AppCompatActivity {
                     setMessage("No hay medicamentos registrados").
                     setPositiveButton("Aceptar", (dialog, which) -> {
                         dialog.dismiss();
-                        Intent intent = new Intent(this, MainActivity.class);
+                        Intent intent = new Intent(this, inicio.class);
                         startActivity(intent);
                     }).show();
         }

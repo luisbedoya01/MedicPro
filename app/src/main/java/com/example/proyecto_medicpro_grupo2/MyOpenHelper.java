@@ -66,19 +66,14 @@ public class MyOpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(tbUsuario);
         db.execSQL(tbMedicamento);
-        //db.execSQL(tbRecordatorio);
+        db.execSQL(tbRecordatorio);
+        db.execSQL(tbEstado);
+
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        if (oldVersion < 6) {
-            db.execSQL(tbRecordatorio);
-            //db.execSQL(dropTbRecordatorio);
-            //db.execSQL(tbEstado);
-            //db.execSQL(insertEstado1);
-            //db.execSQL(insertEstado2);
-            //db.execSQL(insertEstado3);
-        }
+
     }
 
     @SuppressLint("Range")
