@@ -73,7 +73,7 @@ public class ListAdapterMed extends RecyclerView.Adapter<ListAdapterMed.ViewHold
             porcentaje.setText(item.getPorcentajeMedicamento() + "%");
             int porcentaje = item.getPorcentajeMedicamento();
             if (porcentaje >= 50) {
-                recomendacion.setText("Cumplimiento adecuado del trtamiento");
+                recomendacion.setText("Cumplimiento adecuado del tratamiento");
             } else {
                 recomendacion.setText("Mejorar la adherencia al tratamiento");
             }
